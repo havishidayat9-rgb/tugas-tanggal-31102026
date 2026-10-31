@@ -1,0 +1,411 @@
+/* =========================
+   DASAR WEBSITE
+========================= */
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f7f5;
+    color: #333;
+    padding-top: 65px;
+}
+
+/* =========================
+   NAVBAR
+========================= */
+
+.navbar {
+    background: linear-gradient(90deg, #11998e, #38ef7d);
+    box-shadow: 0 3px 15px #0002;
+}
+
+.navbar-brand {
+    font-size: 25px;
+    letter-spacing: 2px;
+}
+
+.nav-link {
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.nav-link:hover {
+    color: #d5ffdf !important;
+    transform: translateY(-2px);
+}
+
+/* =========================
+   HEADER
+========================= */
+
+.site-header {
+    background: linear-gradient(135deg, #11998e, #38ef7d);
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.site-header img {
+    object-fit: contain;
+    transition: 0.4s;
+}
+
+.site-header img:hover {
+    transform: rotate(10deg) scale(1.1);
+}
+
+.site-header h1 {
+    font-size: 38px;
+    animation: headerMasuk 1s ease;
+}
+
+.site-header p {
+    font-size: 18px;
+}
+
+/* =========================
+   KONTEN CARD
+========================= */
+
+.content-card {
+    background: white;
+    height: 100%;
+    min-height: 250px;
+
+    padding: 30px;
+
+    border-radius: 18px;
+    border: 1px solid #e5eee8;
+
+    box-shadow: 0 5px 20px #0001;
+
+    text-align: center;
+
+    transition: 0.4s;
+}
+
+.content-card h2 {
+    font-size: 23px;
+    color: #11998e;
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+.content-card p {
+    color: #666;
+    line-height: 1.7;
+}
+
+.content-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 30px #11998e30;
+    border-color: #38ef7d;
+}
+
+/* =========================
+   ICON
+========================= */
+
+.icon-badge {
+    width: 65px;
+    height: 65px;
+
+    margin: 0 auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: linear-gradient(135deg, #11998e, #38ef7d);
+
+    border-radius: 50%;
+
+    color: white;
+    font-size: 28px;
+
+    transition: 0.4s;
+}
+
+.content-card:hover .icon-badge {
+    transform: rotate(360deg);
+}
+
+/* =========================
+   ANIMASI PESAT
+========================= */
+
+.animation-section {
+    background: #e9f7ef;
+    padding: 50px 20px;
+    border-radius: 25px;
+}
+
+.animation-section h2 {
+    font-size: 32px;
+    animation: judulAnimasi 2s infinite alternate;
+}
+
+.animation-box {
+    max-width: 650px;
+    margin: 25px auto;
+    padding: 12px;
+
+    background: white;
+
+    border-radius: 20px;
+
+    box-shadow: 0 8px 25px #0002;
+}
+
+.animasi-container {
+    position: relative;
+
+    height: 350px;
+
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+
+    overflow: hidden;
+
+    border-radius: 15px;
+
+    background: linear-gradient(
+        135deg,
+        #fafffb,
+        #d8f8e5
+    );
+}
+
+/* LOGO PESAT */
+
+.animation-logo {
+    position: relative;
+    z-index: 3;
+
+    font-size: 70px;
+    font-weight: bold;
+
+    color: #11998e;
+
+    text-shadow: 0 5px 20px #11998e40;
+
+    animation: logoGerak 2s infinite alternate;
+}
+
+/* TEKS */
+
+.animation-text {
+    position: relative;
+    z-index: 3;
+
+    font-size: 14px;
+    color: #333;
+
+    animation: teksMuncul 2s infinite alternate;
+}
+
+/* LINGKARAN BESAR */
+
+.lingkaran {
+    position: absolute;
+
+    width: 220px;
+    height: 220px;
+
+    border: 10px solid #38ef7d;
+    border-top-color: #11998e;
+
+    border-radius: 50%;
+
+    animation: putar 3s linear infinite;
+}
+
+/* LINGKARAN KECIL */
+
+.lingkaran-kecil {
+    position: absolute;
+
+    width: 270px;
+    height: 270px;
+
+    border: 3px dashed #11998e;
+
+    border-radius: 50%;
+
+    animation: putar 8s linear infinite reverse;
+}
+
+/* =========================
+   TOMBOL ANIMASI
+========================= */
+
+.animation-section .btn {
+    border-radius: 25px;
+
+    padding: 10px 22px;
+
+    margin: 5px;
+
+    transition: 0.3s;
+}
+
+.animation-section .btn:hover {
+    transform: scale(1.08);
+}
+
+/* =========================
+   PAUSE ANIMASI
+========================= */
+
+.animasi-container.berhenti * {
+    animation-play-state: paused !important;
+}
+
+/* =========================
+   FOOTER
+========================= */
+
+.footer {
+    background: white;
+
+    margin-top: 50px;
+
+    border-top: 1px solid #ddd;
+}
+
+.footer img {
+    object-fit: contain;
+}
+
+.social-icon {
+    display: inline-flex;
+
+    width: 40px;
+    height: 40px;
+
+    margin-left: 8px;
+
+    align-items: center;
+    justify-content: center;
+
+    background: #e9f7ef;
+
+    border-radius: 50%;
+
+    color: #11998e;
+
+    font-size: 20px;
+
+    text-decoration: none;
+
+    transition: 0.3s;
+}
+
+.social-icon:hover {
+    background: #11998e;
+    color: white;
+    transform: translateY(-5px);
+}
+
+/* =========================
+   KEYFRAMES
+========================= */
+
+@keyframes putar {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes logoGerak {
+    from {
+        transform: translateX(-30px) scale(1);
+    }
+
+    to {
+        transform: translateX(30px) scale(1.08);
+    }
+}
+
+@keyframes teksMuncul {
+    from {
+        opacity: 0.3;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes judulAnimasi {
+    from {
+        transform: scale(1);
+    }
+
+    to {
+        transform: scale(1.05);
+    }
+}
+
+@keyframes headerMasuk {
+    from {
+        transform: translateY(-40px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 768px) {
+
+    .site-header {
+        padding: 60px 15px;
+    }
+
+    .site-header h1 {
+        font-size: 28px;
+    }
+
+    .content-card {
+        min-height: 220px;
+    }
+
+    .animasi-container {
+        height: 300px;
+    }
+
+    .animation-logo {
+        font-size: 50px;
+    }
+
+    .lingkaran {
+        width: 180px;
+        height: 180px;
+    }
+
+    .lingkaran-kecil {
+        width: 230px;
+        height: 230px;
+    }
+
+}
